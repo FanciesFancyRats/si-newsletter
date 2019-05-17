@@ -1,0 +1,133 @@
+
+h2{
+	font-size: 46px;
+	margin: 20px 0 5px 0;
+}
+
+html{
+	color: white;
+	background-color: rgba(9%, 9%, 9%);
+}
+.indicates-required{
+	font-size: 25px;
+}
+.grid{
+	font-size: 36px;
+	box-shadow: -5px 5px 5px black;
+	width: 90vw;
+	height: 90vh;
+	display: grid;
+	grid-template-rows: 1f;
+	grid-template-columns: .25fr 1fr .25fr;
+	background-color: rgba(0, 0, 0, 0.2); 
+}
+.outer-grid{
+	background-image: url(logo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-color: rgba(9%, 9%, 9%);
+	height: 99vh;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 1f;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.fill{
+	width: 100%;
+	height: 5px;
+}
+.hide{
+	height: 0px;
+}
+.center{
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.button{
+	border: rgb(25%, 25%, 25%) solid 2px;;
+	color: white;
+	width: 90%;
+	height: 90px;
+	font-size: 125%;
+	text-decoration: none;
+	background: rgba(5%, 5%, 5%, 0.9); 
+	border-radius: none;
+}
+input{
+	height: 25px;
+	width: 25px;
+}
+.text-box{
+	width: 250px;
+	height: 50px;
+}
+
+@media (orientation: landscape){
+	ul{
+		margin: 0;	
+	}
+	.outer-grid{
+		background-image: url(logo.png);
+		background-position: center;
+		background-repeat: no-repeat;
+
+		height: 99vh;
+		width: 100%;
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+	.grid{
+		font-size: 3vh;
+		box-shadow: -5px 5px 5px black;
+		width: 90vw;
+		height: 90vh;
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: .25fr 1fr .25fr .25fr 1fr .25fr;
+	}
+	.item{
+		flex: 1;	
+	}
+	.mc-field-group{
+		position: relative;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		flex-flow: row wrap;
+		flex-direction: column;
+		justify-content: center;
+	}
+	input{
+		height:	2.5vh;
+		width: 2.5vh;
+	}
+	.text-box{
+		width: 250px;
+		height: 4vh;
+	}
+	.indicates-required{
+		font-size: 2vh;
+	}
+	.button{
+		border: rgb(25%, 25%, 25%) solid 2px;;
+		color: white;
+		width: 90%;
+		height: 6vh;
+		font-size: 125%;
+		text-decoration: none;
+		background: rgba(5%, 5%, 5%, 0.9); 
+		border-radius: none;
+	}
+	.stretch{
+		grid-column-start: 2;
+		grid-column-end: span 4;
+
+	}
+}
