@@ -48,7 +48,7 @@ html{
 	text-align: center;
 }
 
-.button{
+#mc_embed_signup .button{	
 	border: rgb(25%, 25%, 25%) solid 2px;;
 	color: white;
 	width: 90%;
@@ -115,7 +115,7 @@ input{
 	.indicates-required{
 		font-size: 2vh;
 	}
-	.button{
+	#mc_embed_signup .button{
 		border: rgb(25%, 25%, 25%) solid 2px;;
 		color: white;
 		width: 90%;
